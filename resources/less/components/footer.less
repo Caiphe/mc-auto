@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import "../variables.less";
+
+*{
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.car-makes-logos{
+    width: 55%;
+    position: relative;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container{
+    position: relative;
+    width: 100%;
+
+    .top-footer-container{
+        width: 100%;
+        background-color: #07163C;
+        padding: 60px 0px;
+
+        .inner-content{
+            width: 1067px;
+            margin: 0px auto;
+            display: flex;
+            position: relative;
+            color: #fff;
+            justify-content: space-between;
+
+            .each-block{
+                h4{
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition: all .2s ease-in-out;
+
+                            &:hover{
+                                transition: all .2s ease-in-out;
+                                color: @primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-right-container{
+        width: 100%;
+        background-color: #4F4F4F;
+
+        p{
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0px;
+        }
+    }
+}

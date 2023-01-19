@@ -1,0 +1,239 @@
+@import "../../variables.less";
+
+*{
+    padding: 0px;
+}
+
+.internal-banner{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+
+    .internal-page-title{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 35px;
+        font-weight: 700;
+    }
+}
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-layout{
+    min-height: 650px;
+
+    .result-primary-block{
+        width: 1200px;
+        margin: 40px auto;
+        min-height: 500px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        padding: 40px;
+
+        .vehicle-headings{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            .vehicle-name{
+                font-size: 25px;
+                font-weight: 700;
+                font-family: @Roboto;
+            }
+
+            .vehicle-price{
+                color: @orange;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: @Roboto;
+                margin-right: 50px;
+            }
+        }
+
+        .images-details{
+            display: flex;
+            margin-top: 50px;
+
+            .images-section{
+                width: 561px;
+                margin-right: 20px;
+
+                .main-image{
+                    width: 100%;
+                    height: 414px;
+                }
+
+                .bottom-image-container{
+                    display: flex;
+                    margin-top: 15px;
+
+                    .small-image{
+                        width: 109px;
+                        height: 81px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .details-section{
+                position: relative;
+                width: 497px;
+
+                .vehicle-details-heading{
+                    font-size: 20px;
+                    width: 100%;
+                    padding-bottom: 15px;
+                }
+
+                .vehicle-content{
+                    width: 482px;
+                    border-top: 1px solid #000000;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 15px;
+
+                    .left-content{
+                        margin-right: 15px;
+                        border-right: solid 1px #cdcdcd;
+                        padding-right: 15px;
+                    }
+
+                    .each-content{
+                        display: flex;
+                        width: 225px;
+                        justify-content: space-between;
+                        border-bottom: solid 1px #cdcdcd;
+                        padding-bottom: 7px;
+                        padding-top: 7px;
+                        font-family: @Roboto;
+                        font-size: 14px;
+
+                        .name{
+                            color: #000000;
+                        }
+
+                        .data{
+                            color: #919191;
+                        }
+                    }
+                }
+
+                .description-data{
+                    padding-top: 20px;
+                    border-top: solid 1px #cdcdcd;
+                    font-size: 14px;
+                    font-family: @Roboto;
+                    color: #5b5b5b;
+                }
+            }
+        }
+    }
+
+    .contact-dealer{
+        width: 1200px;
+        margin: 30px auto;
+        display: flex;
+
+        .dealer-form-container{
+            width: 400px;
+
+            .each-field{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                label{
+                    font-size: 14px;
+                    font-family: @Roboto;
+                    color: #5b5b5b;
+                }
+
+                .input-field{
+                    height: 35px;
+                    border: solid 1px #cdcdcd;
+                    outline: none;
+                    margin-top: 5px;
+                    background-color: #E6E6E6;
+
+                    &.text-area{
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+       
+    }
+
+    .contact-dealer-bg{
+        width: 500px;
+        height: 420px;
+        margin-left: 40px;
+    }
+}
+
+.primary-buttons{
+    width: 200px;
+    height: 40px;
+    background-color: @orange !important;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sold-cars-container{
+    position: relative;
+    margin-top: 50px;
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    .sold-list{
+        width: 1067px;
+        position: relative;
+        display: flex;
+        margin: 50px auto;
+        gap: 30px;
+        align-content: center;
+    }
+
+    .block-site-heading{
+        color: @blue;
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 900;
+
+        &:after, &:before{
+            content: '';
+            position: absolute;
+            background-color: @orange;
+            height: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease;
+        }
+
+        &:after{
+            width: 45px;
+            bottom: -6px;
+        }
+
+        &:before{
+            width: 80px;
+            bottom: -15px;
+        }
+    }
+
+}
+
+.pt-30{
+    padding-top: 30px;
+}

@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+* {
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.sold-single-vehicle {
+  height: 356px;
+  width: 379px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative;
+  border-bottom: solid 4px #282662;
+  transition: all 0.3s ease;
+  display: block;
+}
+.sold-single-vehicle .vehicle-banner-container {
+  position: relative;
+  height: 203px;
+  width: 100%;
+  overflow: hidden;
+}
+.sold-single-vehicle .vehicle-banner-container .date-sold {
+  position: absolute;
+  padding: 10px 25px;
+  background-color: #E75470;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  top: 8px;
+  left: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.sold-single-vehicle .vehicle-banner-container .vehicle-banner {
+  height: 203px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.sold-single-vehicle .top-details {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 10px;
+  padding: 0px 15px;
+}
+.sold-single-vehicle .top-details span {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  color: #919191;
+}
+.sold-single-vehicle .top-details span svg {
+  margin-right: 5px;
+}
+.sold-single-vehicle .vehicle-model-make {
+  text-align: center;
+  color: #E75470;
+  margin-top: 20px;
+  position: relative;
+}
+.sold-single-vehicle .vehicle-model-make:after,
+.sold-single-vehicle .vehicle-model-make:before {
+  content: '';
+  position: absolute;
+  background-color: #bb1e4f;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+.sold-single-vehicle .vehicle-model-make:after {
+  width: 25px;
+  bottom: -6px;
+}
+.sold-single-vehicle .vehicle-model-make:before {
+  width: 50px;
+  bottom: -15px;
+}
+.sold-single-vehicle .vehicle-price {
+  color: #282662;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.sold-single-vehicle:hover {
+  cursor: pointer;
+  border-bottom: solid 4px #E75470;
+  transition: all 0.3s ease;
+}
+.sold-single-vehicle:hover .date-sold {
+  background-color: #282662;
+  transition: all 0.3s ease-in-out;
+}
+.sold-single-vehicle:hover .vehicle-banner {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.sold-single-vehicle:hover .vehicle-model-make {
+  color: #282662;
+  transition: all 0.3s ease;
+}
+.sold-single-vehicle:hover .vehicle-model-make:after {
+  width: 50px;
+  background-color: #282662;
+}
+.sold-single-vehicle:hover .vehicle-model-make:before {
+  width: 25px;
+  background-color: #282662;
+}
+.sold-single-vehicle:hover .vehicle-price {
+  color: #E75470;
+}
